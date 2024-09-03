@@ -107,7 +107,6 @@ EOF
 
 # Create SSL with self signed CA
 openssl x509 -req \
-        -nodes \
         -days 3650 \
         -sha256 \
         -in $domain.csr \
