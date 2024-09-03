@@ -110,7 +110,6 @@ openssl x509 -req \
         -extfile cert.conf
 
 
-# @todo
-# Remove the generated files
-# - csr.conf
-# - cert.conf
+# Cleanup
+rm ./csr.conf
+rm ./cert.conf
