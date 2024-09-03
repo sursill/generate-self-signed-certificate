@@ -9,15 +9,15 @@ currentDir=$(pwd)
 defaultDomain=local.dev
 
 rootCA_filename=local_rootCA
-rootCA_country=PH
+rootCA_country=UK
 rootCA_organization="SelfSigned Certificates"
 rootCA_commonname="Localhost Root Certificate Authority"
 
-country=PH
-state=Mindanao
-locality=Davao
-organization="Sursill"
-organizationalUnit="Dev"
+country=UK
+state=London
+locality=Barnet
+organization="Sursill Ltd."
+organizationalUnit="Sursill Ltd. dev"
 
 if [ "$#" -ne 1 ]
 then
