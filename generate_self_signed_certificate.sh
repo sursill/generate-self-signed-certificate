@@ -111,8 +111,8 @@ openssl x509 -req \
         -days 3650 \
         -sha256 \
         -in $domain.csr \
-        -CA $rootCA_filename.crt \
-        -CAkey $rootCA_filename.key \
+        -CA ../$rootCA_filename.crt \
+        -CAkey ../$rootCA_filename.key \
         -CAcreateserial \
         -out $domain.crt \
         -extfile cert.conf
