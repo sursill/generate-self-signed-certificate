@@ -46,6 +46,14 @@ else
     echo "RootCA Certificate found"
 fi
 
+# Create folder for domain
+if [ ! -d ./$domain ];
+then
+    mkdir $domain
+fi
+
+cd $domain
+
 # Generate Private key
 openssl genrsa -out $domain.key 2048
 
